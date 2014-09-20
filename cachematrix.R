@@ -27,7 +27,7 @@ cacheSolve <- function(x, ...) { ##function, that works with makeCacheMatrix obj
     return(m) ##code breaks here
   }
   data <- x$get()  ##else get value of matrix, stored in x.  
-  x$setinverse(data) ####calculate and store the inverse
+  x$setinverse(data,...) ####calculate and store the inverse
   x$getinverse()  
 }
 
